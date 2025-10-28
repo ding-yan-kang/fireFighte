@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>我的个人视频库</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .header p {
+            opacity: 0.9;
+        }
+        .video-list {
+            padding: 30px;
+            display: grid;
+            gap: 30px;
+        }
+        .video-item {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            border-left: 5px solid #3498db;
+        }
+        .video-item h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        .video-player {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #ecf0f1;
+            color: #7f8c8d;
+            border-top: 1px solid #bdc3c7;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .video-list {
+                padding: 15px;
+            }
+            .video-player {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎬 我的个人视频库</h1>
+            <p>随时随地，畅享精彩内容</p>
+        </div>
+        
+        <div class="video-list">
+            <!-- 视频1 -->
+            <div class="video-item">
+                <h3>示例视频一：美丽风景</h3>
+                <video class="video-player" controls controlsList="nodownload">
+                    <source src="./videos/鉴定一二.mp4" type="video/mp4">
+                    您的浏览器不支持视频播放，请使用现代浏览器访问。
+                </video>
+            </div>
+            
+            <!-- 视频2 -->
+            <div class="video-item">
+                <h3>示例视频二：技术演示</h3>
+                <video class="video-player" controls controlsList="nodownload">
+                    <source src="./videos/鉴定三.mp4" type="video/mp4">
+                    您的浏览器不支持视频播放，请使用现代浏览器访问。
+                </video>
+            </div>
+
+             <!-- 视频3 -->
+            <div class="video-item">
+                <h3>示例视频三：技术演示</h3>
+                <video class="video-player" controls controlsList="nodownload">
+                    <source src="./videos/鉴定五.mp4" type="video/mp4">
+                    您的浏览器不支持视频播放，请使用现代浏览器访问。
+                </video>
+            </div>
+
+             <!-- 视频4 -->
+            <div class="video-item">
+                <h3>示例视频四：技术演示</h3>
+                <video class="video-player" controls controlsList="nodownload">
+                    <source src="./videos/鉴定五(2).mp4" type="video/mp4">
+                    您的浏览器不支持视频播放，请使用现代浏览器访问。
+                </video>
+            </div>
+
+             <!-- 视频5 -->
+            <div class="video-item">
+                <h3>示例视频五：技术演示</h3>
+                <video class="video-player" controls controlsList="nodownload">
+                    <source src="./videos/鉴定七.mp4" type="video/mp4">
+                    您的浏览器不支持视频播放，请使用现代浏览器访问。
+                </video>
+            </div>
+
+             <!-- 视频6 -->
+            <div class="video-item">
+                <h3>示例视频六：技术演示</h3>
+                <video class="video-player" controls controlsList="nodownload">
+                    <source src="./videos/鉴定八.mp4" type="video/mp4">
+                    您的浏览器不支持视频播放，请使用现代浏览器访问。
+                </video>
+            </div>
+            
+            <!-- 可以继续添加更多视频 -->
+        </div>
+        
+        <div class="footer">
+            <p>© 2024 我的视频库 | 由 Gitee Pages 驱动</p>
+        </div>
+    </div>
+</body>
+</html>
